@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPARTA FLIX</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="slide.js"></script>
+    
+</head>
+
+<body>
+
+    <div class="wrap">
+        <header class="head">
+            <a href="index.html" >내배캠 BOX OFFICE</a>
+        </header>
+    </div>
+
+    <!-- 검색창 -->
+    <!-- <div class="button">
+       
+        <input type="text"  onkeypress="enter1()" id="search" placeholder="당신의 영화를 찾아보세요!">
+        <label>영화 검색하기</label>
+        <span class="span-input"></span>
+
+        <button id="search-btn" type="button">검색</button>
+      </div> -->
+    <!-- --------------- -->
+
+    <!-- 새로운 검색창 디자인 -->
+    <div class="dd" >
+    <div class="input-box" >
+        <input type="text"  onkeypress="enter1()" id="search"required>
+        <label>영화 검색</label>
+        <span></span>
+        
+        <!-- <button id="search-btn" type="button">검색</button> -->
+    </div>
+
+    </div>
+    <div class="recomended">
+
+        당신을 위한 추천영화!
+    </div>
+
+    <!-- --------------------- -->
+      <div class="body1">
+    <div class="body2">
+   <div class="container-card">
+    <!-- <div class="card" style="--i:-4;"><img src="https://i.namu.wiki/i/3tFyMwbIjc6v1AtI4WNTk5oRe_Ekkp7QMi2vhOYw_XgTI1fTz6dJMuYBhJXjmScCulmZLPASQXova7tcRyc9wlfbnVUHLeTPkiJqlpM5oAQp8wsImlV1v9qwHinmosloKYby4ARRYlZdENk3EfEGVttX4D0umerLpYeAuld2VcU.webp"></div>
+    <div class="card" style="--i:-3;"><img src="https://upload.wikimedia.org/wikipedia/ko/b/b8/1917%EC%98%81%ED%99%94_%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg?20200202072113"></div>
+    <div class="card" style="--i:-2;"><img src="https://cdn.newsculture.press/news/photo/202301/516241_633286_4420.jpg"></div>
+    <div class="card" style="--i:-1;"><img src="https://cdn.news.hoseo.ac.kr/news/photo/202010/202_177_196.jpg"></div>
+    <div class="card" style="--i:0;"><img src="https://an2-img.amz.wtchn.net/image/v2/qqHLTmi4BkRLfT-TUbsIGg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk5Ea3dlRGN3TUhFNE1DSmRMQ0p3SWpvaUwzWXhMMlp2ZEhwNGJIb3pZMjl2ZFhWNmFHMWxZMkp1SW4wLlVxQkRmNkpWUEItUE4xaUhOaFNOaWl0VEt5T2dZREt0VEdXbVlfLXdMTVE"></div>
+    <div class="card" style="--i:1;"><img src="https://an2-img.amz.wtchn.net/image/v2/hPZzbajorJEDfMo-N-Cy6w.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk5Ea3dlRGN3TUhFNE1DSmRMQ0p3SWpvaUwzWXlMM04wYjNKbEwybHRZV2RsTHpFMk1UYzROalkyTXpRME1qQXhPRGMwTkRBaWZRLjM4VE5MamZzdzA4SkcyWHctMDBKWkZ0RVBCSTEtOFlTOGs2OEZQWjlDTXc"></div>
+    <div class="card" style="--i:2;"><img src="https://an2-img.amz.wtchn.net/image/v2/4LNjyfJvoO2jd8Rg7ldQEA.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk5Ea3dlRGN3TUhFNE1DSmRMQ0p3SWpvaUwzWXhMMngyYjI5cmEydHhkWHA2Wm5SM01ub3hOVFJySW4wLjJQQndNMkVJd3VCRDN2WXN5ODlFSmlMZHRqTVBGWnhrd2YxU0NjcWt4SGc"></div>
+    <div class="card" style="--i:3;"><img src="https://an2-img.amz.wtchn.net/image/v2/sLvAZqjVNOqw-gr8bULjeg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk5Ea3dlRGN3TUhFNE1DSmRMQ0p3SWpvaUwzWXhMM0V6WTNKM2IzVjZZM0Z4YkdOMmVIcHNkbTgySW4wLmJHMGNCR2JFMTBBOEFkNFYxSy1EcWdtWk9lMFM1U2VIbUZ5UGdwblRsUDA"></div>
+    <div class="card" style="--i:4;"><img src="https://an2-img.amz.wtchn.net/image/v2/jpGyE1obJhgs9Z7QQP4YBA.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk5Ea3dlRGN3TUhFNE1DSmRMQ0p3SWpvaUwzWXhMMmxvZG5Kd2NqQnJkbVI2WVRkc2VXbG5aM04wSW4wLnRQMWRVZmgxamkxRmxIeUg3dDd4RnFKWS13V0Q3NnA5N0FSc3lFdVBiRlE"></div> -->
+
+</div>
+
+</div>
+    <div class="container">
+    <div class="section">
+    </div>
+</div>
+</body>
+
+</html>

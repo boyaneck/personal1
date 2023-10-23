@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+.head a{
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    color:#E50914;
+}
+.dd{
+   
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+img {
+    width:100%;
+}
+.container{
+    display:grid;
+}
+.section{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+ gap: 20px;
+
+padding:30px 60px 30px 30px;
+}
+.section > div{
+  
+    box-shadow: 1px 3px 10px white, 1px 3px 50px rgba(0, 0, 0, 0.24);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    justify-self: center;
+   
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+body{
+
+ background-color:black;
+ color:#fff;
+ font-family: "Noto Sans KR", sans-serif;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+   justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+.section{
+    
+
+margin:20px;
+
+
+}
+.card{
+    margin: 10px;
+}
+
+
+/* 포스터 카드 */
+.body1{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.body2{
+    height:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background-color: black;
+    overflow:hidden;
+}
+.container-card{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-card .card{
+    position: absolute;
+    width: 240px;
+    height: 360px;
+    /* background: #5e5cfc; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgba(0,0,0,0.2);
+    font-size:8em;
+    font-weight: 700;
+    border:10px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+    transform-origin: 50% 100%;
+    /* filter:hue-rotate(calc(var(--i) * 50deg)); */
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+
+.container-card:hover .card {
+    transform: rotate(calc(var(--i)* 5deg)) translate(calc(var(--i)*120px),-50px);
+    color:rgba(0,0,0,0.25);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.25);
+}
+.container-card:active .card {
+ background:#333;
+}
+.container-card .card:active{
+    translate:calc(var(--i)*20px) -50px;
+    z-index:100;
+    /* background:#5e5cfc; */
+} 
+
+/* 검색 스타일 */
+
+.input-box {
+    position: relative;
+    width: 300px;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  
+  input {
+    font-size: 15px;
+    color: white;
+    width: 300px;
+    border: none;
+    border-bottom: solid gray 0.5px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+    background: none;
+    z-index: 5;
+  }
+  
+  input::placeholder { color: #aaaaaa; }
+  input:focus { outline: none; }
+  
+  span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;  /* right로만 바꿔주면 오 - 왼 */
+    background-color: red;
+    width: 0;
+    height: 2.5px;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+  
+  label {
+  position: absolute;
+  color:white;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 23px;
+  bottom: 1px;
+  transition: all .2s;
+  font-weight: 600;
+}
+  
+  input:focus ~ label, input:valid ~ label {
+  font-size: 16px;
+  bottom: 40px;
+  color: red;
+  font-weight: bold;
+  }
+  
+  input:focus ~ span, input:valid ~ span {
+  width: 100%;
+  }
+
+.recomended{
+    margin-left:5px;
+    margin-top:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+}
