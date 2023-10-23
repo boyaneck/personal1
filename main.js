@@ -123,10 +123,10 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?language=ko-KR&page=1', opti
       //   let title2=list2.title;
        
       //   let cardsection =`<div class="card" style="--i:-${i};">${i} <img src="https://image.tmdb.org/t/p/w400${list2.backdrop_path}"style="width:100%; alt="none"></img></div>`;
-        let doc2=document.createElement('div');
-        doc2.innerHTML=`<div class="card" style="--i:-${i};">${i} <img src="https://image.tmdb.org/t/p/w400${list2.backdrop_path}"style="width:100%; alt="none"></img></div>`;
+        // let doc2=document.createElement('div');
+        // doc2.innerHTML=`<div class="card" style="--i:-${i};">${i} <img src="https://image.tmdb.org/t/p/w400${list2.backdrop_path}"style="width:100%; alt="none"></img></div>`;
 
-        document.querySelector('.container-card').append(doc2);
+        // document.querySelector('.container-card').append(doc2);
 
       //   console.log('에헤라')
 
